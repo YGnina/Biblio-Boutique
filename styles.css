@@ -1,0 +1,67 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.banner-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeT_sxzJEJ8kNJKIAZdmSrWBSPAfzvFn_T3A&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail {
+    border: none;
+}
+
+.thumbnail img {
+    max-height: 250px;
+}
+
+.caption {
+    text-align: left;
+}
+
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.row{
+    margin-top: 70px;
+}
+
+.table_style{
+    margin-top: 70px;
+}
+
+.container_style{
+    margin-top: 80px;
+}
+
+footer {
+    color: #b0b0b0;
+    text-align: center;
+    padding: 1rem 0;
+}
