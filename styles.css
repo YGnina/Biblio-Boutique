@@ -1,6 +1,12 @@
+
+
 body {
     background-color: #f0f0f0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -10,12 +16,23 @@ header {
     padding: 1rem 0;
 }
 
+footer {
+    color: #b0b0b0;
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#main {
+    flex-grow: 1;
+}
+
 h1 {
     font-size: 2rem;
 }
 
 .banner-image {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeT_sxzJEJ8kNJKIAZdmSrWBSPAfzvFn_T3A&usqp=CAU');
+    background-image: url('pics/books.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -27,21 +44,22 @@ h1 {
 }
 
 .banner-content {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 5%; 
+    padding-bottom: 5%; 
 }
+
 
 .thumbnail {
-    border: none;
-}
-
-.thumbnail img {
-    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
 .caption {
-    text-align: left;
+    margin-top: 10px;
 }
-
 
 ul{
     list-style: none;
@@ -52,16 +70,67 @@ ul{
     margin-top: 70px;
 }
 
-.table_style{
+/* .table_style{
     margin-top: 70px;
 }
 
 .container_style{
     margin-top: 80px;
+} */
+
+/* product */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin: 5%;
 }
 
-footer {
-    color: #b0b0b0;
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
-    padding: 1rem 0;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* .product-price {
+    color: #007bff;
+    margin-top: 0.5rem;
+} */
+
+.btn-primary {
+    margin-top: 1rem;
+}
+
+/* account form */
+
+.form-page{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.form-page .btn{
+    background: #949393;
+    border-radius: 30px;
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin: 20px 0;
+}
+
+.show-form{
+    display:none;
 }
